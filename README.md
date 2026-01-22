@@ -1,2 +1,2 @@
 # javascript-practice
-Daily Java practice programs
+Daily Javascript advance practice programs
