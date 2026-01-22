@@ -10,4 +10,10 @@ h1{
     margin: 20px;
     padding: 30px;
     color: brown;
+
+}
+p{
+    background: green;
+    font-size: 30px;
+    color: violet;
 }
