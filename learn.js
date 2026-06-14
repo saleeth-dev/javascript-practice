@@ -146,3 +146,41 @@ const max = nums.reduce((acc, curr) => {
     return curr > acc ? curr : acc;
 });
 console.log(max);
+
+// Q-1
+(function(){
+   // code
+   console.log("Welcome to Frontend Advanced");
+})();
+
+// Q-2
+
+class Person {
+    constructor (name){
+        this.name = name;
+    }
+
+    great(){
+        console.log(`Hello, I am ${this.name}`);
+    }
+}
+const Person1 = new Person("John");
+console.log(Person1.great());
+
+// Q-3
+function sumAll(...numbers){
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sumAll(1, 2, 3, 4, 5)); // Output: 15   
+console.log(sumAll(10, 20, 30)); // Output: 60
+
+// Q-4
+const greet = function() {
+    console.log("Hello Saleeth");
+};
+
+function execute(func) {
+    func();
+}
+
+execute(greet);
