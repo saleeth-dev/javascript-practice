@@ -41,3 +41,27 @@ function App() {
 }
 
 export default App;
+
+import { useRef } from "react";
+
+function App() {
+
+  const countRef = useRef(0);
+
+  function increase() {
+    countRef.current += 1;
+    console.log(countRef.current);
+  }
+
+  return (
+    <div>
+
+      <button onClick={increase}>
+        Increase
+      </button>
+
+    </div>
+  );
+}
+
+export default App;
