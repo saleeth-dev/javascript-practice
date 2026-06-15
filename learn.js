@@ -184,3 +184,61 @@ function execute(func) {
 }
 
 execute(greet);
+
+// ****
+const num = [2, 4, 6, 8, 10];
+const square = num.map(n => n * n);
+console.log(square); // Output: [4, 16, 36, 64, 100]
+
+const mun = [1, 2, 3, 2, 1, 9, 4, 5, 5, 6, 7, 7, 7, 8, 9];
+const even = mun.filter(n => n % 2 === 0);
+console.log(even); // Output: [2, 2, 4, 6, 8]
+
+const sum = mun.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); // Output: 70
+
+const calculate = (operation, a, b) => {
+    return operation(a, b);
+}
+console.log(calculate((x, y) => x + y, 5, 3)); // Output: 8
+
+function factorial(n) {
+    if (n ===0 || n === 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+console.log(factorial(5)); // Output: 120
+
+class Student {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    getDetails() {
+        return `Name: ${this.name}, Age: ${this.age}`;
+    }
+}
+const stud1 = new Student('Alice', 20);
+console.log(stud1.getDetails()); // Output: Name: Alice, Age: 20
+
+const frontend = ["HTML", "CSS"];
+const backend = ["Node.js", "Express"];
+const fullstack = [...frontend, ...backend];
+console.log(fullstack); // Output: ["HTML", "CSS", "Node.js", "Express"]
+
+function multiply(a, b) {
+    return a * b;
+}
+console.log(multiply(5, 3)); // Output: 15
+
+const products = [{ name: "Laptop", price: 999, brand: "Dell" },
+                 { name: "Phone", price: 499, brand: "Apple" },
+                 { name: "Tablet", price: 299, brand: "Samsung" }];
+const above300 = products.filter(product => product.price > 300);
+console.log(above300); // Output: [{ name: "Laptop", price: 999, brand: "Dell" }, { name: "Phone", price: 499, brand: "Apple" }]
+
+const totalPrice = products.reduce((total, product) => total + product.price, 0);
+// ****
